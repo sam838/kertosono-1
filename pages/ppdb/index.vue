@@ -41,6 +41,8 @@ YAYASAN YOHANNES GABRIEL PERWAKILAN I"
           </div>
         </div>
 
+      
+
         <div
           class="
             row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1
@@ -48,6 +50,7 @@ YAYASAN YOHANNES GABRIEL PERWAKILAN I"
             box
           "
         >
+
           <div
             class="col mix"
             :class="ppdb.category"
@@ -61,8 +64,12 @@ YAYASAN YOHANNES GABRIEL PERWAKILAN I"
 
               <div class="content">
                 <h5 class="title">
-                  <n-link to="#">{{ ppdb.title }}</n-link>
+                  <b-button v-b-modal.my-modal>
+                    <n-link to="#">{{ ppdb.title }}</n-link>
+                  </b-button>
                 </h5>
+
+                <b-modal id="my-modal"><img class="img-fluid" :src="ppdb.imgSrc" :alt="ppdb.title"/></b-modal>
               </div>
             </div>
           </div>
@@ -72,7 +79,10 @@ YAYASAN YOHANNES GABRIEL PERWAKILAN I"
           <h1 class="title">Pertanyaan Seputar PPDB</h1>
         </div>
         <div class="col-12 mb-3">
-          <textarea name="message" placeholder="Silahkan mengirimkan pertanyaan Anda seputar PPDB"></textarea>
+          <textarea
+            name="message"
+            placeholder="Silahkan mengirimkan pertanyaan Anda seputar PPDB"
+          ></textarea>
         </div>
         <div class="col-12 text-left">
           <button class="btn btn-primary btn-hover-secondary">Kirim</button>
@@ -91,8 +101,8 @@ export default {
       ppdbData: [
         {
           imgSrc: "/images/ppdb/tk-trop.png",
-          title: "TKK ST. YUSUP TROPODO",
-          category: "tk",
+          title: "SDK ST. YUSUP TROPODO",
+          category: "sd",
         },
         {
           imgSrc: "/images/ppdb/tk-3.png",

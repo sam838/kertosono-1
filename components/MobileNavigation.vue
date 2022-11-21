@@ -2,7 +2,7 @@
   <div class="mobile-navigation">
     <nav class="offcanvas-navigation" id="offcanvas-navigation">
       <ul>
-        <li class="menu-item-has-children">
+        <li>
           <n-link to="/">Beranda</n-link>
         </li>
         <li>
@@ -14,27 +14,15 @@
         <li>
           <n-link to="/news">Berita</n-link>
         </li>
+        <!-- <li>
+                      <n-link to="/about">Event</n-link>
+                    </li> -->
         <li>
           <n-link to="/ppdb">PPDB</n-link>
         </li>
         <li>
           <n-link to="/career">Karir</n-link>
         </li>
-        <!-- <li class="menu-item-has-children">
-          <n-link to="/">Event</n-link>
-        </li> -->
-
-        <!-- <li class="menu-item-has-children">
-          <n-link to="">Pendaftaran</n-link>
-          <ul class="sub-menu">
-            <li>
-              <n-link to="/registration/students">Siswa Baru</n-link>
-            </li>
-            <li>
-              <n-link to="/registration/employee">Guru/Karyawan</n-link>
-            </li>
-          </ul>
-        </li> -->
       </ul>
     </nav>
   </div>

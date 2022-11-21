@@ -82,7 +82,7 @@
                         TK berlandaskan keagamaan Katolik. Maka mulai dilakukan
                         proses rekrutmen guru TKK dengan syarat utama untuk
                         mendirikan TKK adalah mencari tenaga pendidik harus
-                        memiliki ijasah TKK. Setelah mendapatkan guru yang
+                        memiliki ijazah TKK. Setelah mendapatkan guru yang
                         memiliki potensi, akhirnya langsung bergerak menyusun
                         program persiapan untuk membuka TKK. Setelah persiapan
                         selesai, maka TKK St. Maria Sidoarjo mulai beroperasi

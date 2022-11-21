@@ -102,16 +102,44 @@
                         />
                       </div>
                       <div class="col-md-6 col-12 mb-3">
-                        <input
+                        <!-- <input
                           type="text"
                           placeholder="Tempat, tanggal lahir *"
                           name="dob"
-                        />
+                        /> -->
+                        <!-- <b-input-group class="mb-3">
+                          <b-form-input
+                            id="example-input"
+                            v-model="value"
+                            type="text"
+                            placeholder="YYYY-MM-DD"
+                            autocomplete="off"
+                          ></b-form-input>
+                          <b-input-group-append>
+                            <b-form-datepicker
+                              v-model="value"
+                              button-only
+                              right
+                              locale="en-US"
+                              aria-controls="example-input"
+                              @context="onContext"
+                            ></b-form-datepicker>
+                            
+                          </b-input-group-append>
+                        </b-input-group> -->
+                        
                       </div>
                       <div class="col-md-6 col-12 mb-3 mt-1">
-                        <b-form-select
+                        <!-- <b-form-select
                           v-model="selected"
                           :options="options"
+                          class="mb-3"
+                          size="lg"
+                          style="font-size: 1rem"
+                        > -->
+                        <b-form-select
+                          v-model="selected"
+                          
                           class="mb-3"
                           size="lg"
                           style="font-size: 1rem"
@@ -151,7 +179,7 @@
                       <div class="col-md-6 col-12 mb-3 mt-1">
                         <b-form-select
                           v-model="selected"
-                          :options="options"
+                          
                           class="mb-3"
                           size="lg"
                           style="font-size: 1rem"
@@ -205,10 +233,17 @@
                           name="phone"
                         />
                       </div>
+                      <div class="col-md-6 col-12 mb-3">
+                        <input
+                        type="phone"
+                        placeholder="No. Handphone *"
+                        name="phone"
+                        />
+                      </div>
                       <div class="col-md-6 col-12 mb-3 mt-1">
                         <b-form-select
                           v-model="selected"
-                          :options="options"
+                          
                           class="mb-3"
                           size="lg"
                           style="font-size: 1rem"
@@ -268,7 +303,7 @@
                         <b-form-file
                           v-model="file1"
                           :state="Boolean(file1)"
-                          placeholder="Silahkan Upload File Di sini..."
+                          placeholder="Silahkan Upload File CV Di sini..."
                           drop-placeholder="Drop file here..."
                         ></b-form-file>
                         <div class="mt-3">
@@ -293,8 +328,6 @@
       </div>
     </div>
     <!-- Employee Section End -->
-
-   
   </div>
 </template>
 
@@ -303,7 +336,6 @@ export default {
   components: {
     OffCanvasMobileMenu: () => import("@/components/OffCanvasMobileMenu"),
     BreadcrumbOne: () => import("@/components/BreadcrumbOne"),
-   
   },
 
   data() {
@@ -323,6 +355,15 @@ export default {
       ],
     };
   },
+
+  methods: {
+      onContext(ctx) {
+        // The date formatted in the locale, or the `label-no-date-selected` string
+        this.formatted = ctx.selectedFormatted
+        // The following will be an empty string until a valid date is entered
+        this.selected = ctx.selectedYMD
+      }
+    },
 
   head() {
     return {

@@ -6,7 +6,7 @@ export default {
     
     // Global page headers (https://go.nuxtjs.dev/config-head)
     head: {
-        title: 'Yohanes Gabriel',
+        title: 'Yohannes Gabriel',
         // titleTemplate: '%s || Exomac',
         meta: [
             { charset: 'utf-8' },
@@ -30,6 +30,7 @@ export default {
         '~/plugins/silentbox.js',
         '~/plugins/vuejs-paginate.js',
         '~/plugins/Mixitup.client.js',
+        '~/plugins/observe-visibility.js',
         {
             src: "~/plugins/aos", 
             ssr: false 
@@ -62,7 +63,6 @@ export default {
 
     // Build Configuration (https://go.nuxtjs.dev/config-build)
     build: {
-         target: 'static',
         extend (config, ctx) {
         },
     },

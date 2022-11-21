@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Header -->
     <div
       class="header-section header-transparent"
       :class="{ 'is-sticky': isSticky }"
@@ -11,8 +12,12 @@
             <div class="col-xl-2 col-auto order-0">
               <div class="header-logo">
                 <n-link to="/" style="color: white">
-                 <img class="dark-logo" src="/images/logo/yoga-logo.png" alt="Agency Logo">
-                 </n-link>
+                  <img
+                    class="dark-logo"
+                    src="/images/logo/yoga-logo.png"
+                    alt="Agency Logo"
+                  />
+                </n-link>
               </div>
             </div>
             <!-- Header Logo End -->
@@ -65,7 +70,7 @@
                   </ul>
                 </nav>
               </div>
-              
+
               <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
                 <button
                   class="toggle"
@@ -99,7 +104,12 @@
       </div>
     </div>
     <Nuxt />
-    <div class="footer-section" :style="{ backgroundImage: `url(${'/images/bg/bg-footer.png'})`} ">
+
+    <!-- Footer -->
+    <div
+      class="footer-section"
+      :style="{ backgroundImage: `url(${'/images/bg/bg-footer.png'})` }"
+    >
       <div class="container">
         <!-- Footer Top Widgets Start -->
         <div class="row section-padding pt-0 mtn-30">
@@ -111,27 +121,36 @@
                                 <img :src="footerData.footerAboutWidget.logoSrc" alt="Logo">
                             </n-link>
                         </div> -->
-              <div class="footer-widget-content" >
-                <div class="content" >
-                  <p style=" color: white">
+              <div class="footer-widget-content">
+                <div class="content">
+                  <p style="color: white">
                     <a href="tel: (031) 995 33993 | 0821 3222 9796">{{
                       footerData.footerAboutWidget.telephone
                     }}</a>
                   </p>
-                  <p style=" color: white">
+                  <p style="color: white">
                     <a href="mailto: humas@yohannesgabrielpw1.org">{{
                       footerData.footerAboutWidget.email
                     }}</a>
                   </p>
                 </div>
-                <div class="footer-social-inline" >
-                  <a :href="footerData.footerAboutWidget.twitterUrl" style=" color: white">
+                <div class="footer-social-inline">
+                  <a
+                    :href="footerData.footerAboutWidget.twitterUrl"
+                    style="color: white"
+                  >
                     <i class="fab fa-twitter-square"></i>
                   </a>
-                  <a :href="footerData.footerAboutWidget.fbUrl" style=" color: white">
+                  <a
+                    :href="footerData.footerAboutWidget.fbUrl"
+                    style="color: white"
+                  >
                     <i class="fab fa-facebook-square"></i>
                   </a>
-                  <a :href="footerData.footerAboutWidget.instagramUrl" style=" color: white">
+                  <a
+                    :href="footerData.footerAboutWidget.instagramUrl"
+                    style="color: white"
+                  >
                     <i class="fab fa-instagram"></i>
                   </a>
                 </div>
@@ -146,7 +165,10 @@
               <h4 class="footer-widget-title">
                 {{ footerData.footerLinkTitleOne }}
               </h4>
-              <div class="footer-widget-content" style="text-align:center; color: white">
+              <div
+                class="footer-widget-content"
+                style="text-align: center; color: white"
+              >
                 <ul>
                   <li
                     v-for="(nav, index) in footerData.navListOne"
@@ -166,7 +188,10 @@
               <h4 class="footer-widget-title">
                 {{ footerData.footerLinkTitleTwo }}
               </h4>
-              <div class="footer-widget-content" style="text-align:center; color: white">
+              <div
+                class="footer-widget-content"
+                style="text-align: center; color: white"
+              >
                 <ul>
                   <li
                     v-for="(nav, index) in footerData.navListTwo"
@@ -240,12 +265,10 @@
 <script>
 import footerData from "~/data/footer.json";
 export default {
-
   data() {
     return {
       isSticky: false,
       footerData,
-      
     };
   },
 
@@ -283,3 +306,4 @@ export default {
   },
 };
 </script>
+

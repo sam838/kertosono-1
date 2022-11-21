@@ -94,11 +94,19 @@
         & + li {
             border-top: 1px solid #EEEEEE;
         }
+        span {
+            a {
+                color: inherit;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+        }
 
         & a {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;
             color: $heading-color;
             position: relative;
             display: block;
@@ -113,9 +121,6 @@
         }
     }
 }
-
-
-
 
 
 .tagcloud {
@@ -183,11 +188,10 @@
     font-size: 18px;
     font-weight: 500;
     color: $gray-100;
-    
 
-    & p {
+    a {
+        display: block;
         margin-bottom: 5px;
-        color: $gray-100;
         font-family: $link-font;
 
         &:last-child {
@@ -235,13 +239,10 @@
 .footer-social-inline {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
-    margin-right: -10px;
-    margin-bottom: -10px;
+    margin-top: 30px;
 
     & a {
         margin-right: 10px;
-        margin-bottom: 10px;
         color: $gray-100;
 
         & i {

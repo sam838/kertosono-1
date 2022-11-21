@@ -22,9 +22,7 @@ body {
     visibility: visible;
     overflow-x: hidden;
     transition: $transition;
-    letter-spacing: 0;
-    // color: $secondary;
-    color: #000000;
+    color: $secondary;
 }
 
 h1,
@@ -92,7 +90,6 @@ input[type="submit"] {
 
 img {
     max-width: 100%;
-    text-align: center;
 }
 
 ul {
@@ -110,15 +107,21 @@ svg:not(:root) {
 	overflow: hidden;
 }
 
+i {
+    &.fas {
+        font-weight: 300;
+    }
+}
+
 /* Common Classes */
-.section-border-bottom{
+.section-border-bottom {
     border-bottom: 1px solid #e7e7e7;
 }
 
 .fix {
     overflow: hidden;
 }
-.before-zindex-9{
+.before-zindex-9 {
     position: relative;
     &::before{
         z-index: 9 !important;
@@ -161,7 +164,7 @@ $color in $theme-colors {
         height: 100%;
         z-index: -1;
         position: absolute;
-        background-color: #2c2b2ba6;
+        background-color: $overlay-black;
     }
 }
 
@@ -200,12 +203,12 @@ input:not([type=submit]):not([type=file]) {
 }
 
 /* swiper default styles */
-
 .swiper-pagination{
     position: static;
     display: block;
     line-height: 1;
-    margin-top: 20px;
+    margin-top: 0;
+    width: 100%;
 
     .swiper-pagination-bullet {
         width: 10px;
@@ -216,7 +219,7 @@ input:not([type=submit]):not([type=file]) {
         opacity: 1;
         position: relative;
         outline: none;
-        margin-right: 20px;
+        margin-right: 10px;
         &:last-child{
             margin-right: 0;
         }

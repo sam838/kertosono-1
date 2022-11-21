@@ -4,11 +4,9 @@
         <div class="inner custom-scrollbar">
             <div class="mobile-header">
                 <div class="logo">
-                    <n-link to="/" style="
-    color: white;">
-                  <!-- Yohanes Gabriel -->
-                   <img class="dark-logo" src="/images/logo/yoga-logo.png" alt="Agency Logo">
-                </n-link>
+                    <n-link to="/" style="color: white;">
+                        <img class="dark-logo" src="/images/logo/yoga-logo.png" alt="site logo">
+                    </n-link>
                 </div>
                 <button class="mobile-close-btn" @click="mobiletoggleClass('removeClass', 'show-mobile-menu')"></button>
             </div>

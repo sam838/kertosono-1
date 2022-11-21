@@ -29,7 +29,7 @@
 
     //Responsive
     @media #{$large-mobile}{
-        right: 0;
+        right: 15px;
     }
 
     & button {
@@ -37,7 +37,7 @@
         border: medium none;
         color: #fff;
         cursor: pointer;
-        font-size: 50px;
+        font-size: 30px;
         line-height: 1;
         padding: 0;
         transition: all 0.3s ease 0s;
@@ -53,8 +53,6 @@
     width: 75%;
     text-align: center;
     font-size: 18px;
-    opacity: 0;
-    visibility: hidden;
     transition: all ease-in-out .3s;
     //Responsive
     @media #{$laptop-device, $desktop-device, $tablet-device}{
@@ -89,19 +87,16 @@
             background-color: transparent;
             border: medium none;
             color: $white;
-            font-size: 30px;
+            font-size: 22px;
             padding: 0;
             position: absolute;
             right: 0;
             bottom: 10px;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
             -webkit-transition: all 0.3s ease 0s;
             transition: all 0.3s ease 0s;
         }
     }
-    & p{
+    & p {
         font-size: 90%;
         font-weight: bold;
         display: block;
@@ -124,16 +119,14 @@
         visibility: visible;
         z-index: 9999999;
 
-        & .sidebar-search-input{
-            opacity: 1;
-            visibility: visible;
+        & .sidebar-search-input {
             transform: translate(-50%, -50%) scale(1);
             & input{
                 transform: scale3d(1, 1, 1);
                 transition: .5s ease-out .3s;
                 border-bottom-color: $white;
             }
-            & p{
+            & p {
                 opacity: 1;
                 transform: translate3d(0, 0, 0);
             }

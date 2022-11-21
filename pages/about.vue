@@ -2,6 +2,7 @@
   <div class="main-container">
     <OffCanvasMobileMenu />
 
+    <!-- Banner -->
     <BreadcrumbOne
       :items="items"
       title="MEWUJUDKAN PENDIDIKAN KATOLIK
@@ -9,6 +10,7 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
       backgroundUrl="/images/bg/about-1.png"
     />
 
+    <!-- Welcome -->
     <div class="section-padding-top about-section-padding-bottom-80">
       <div class="container">
         <div class="row">
@@ -54,10 +56,10 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
                   Gabriel Perwakilan 1.
                 </h4>
                 <p style="text-align: justify">
-                  Sejak berdiri tahun 1925, yayasan ini ada dan terus
-                  memberikan yang terbaik untuk mencerdaskan kehidupan bangsa.
-                  Kami terus mengembangkan diri sesuai dengan gerak jaman agar
-                  dapat mendidik generasi penerus dan masa depan gereja dan
+                  Sejak berdiri tahun 1925, yayasan ini ada dan terus memberikan
+                  yang terbaik untuk mencerdaskan kehidupan bangsa. Kami terus
+                  mengembangkan diri sesuai dengan gerak jaman agar dapat
+                  mendidik generasi penerus dan masa depan gereja dan
                   masyarakat. Nilai-nilai Katolik dan kebangsaan menjadi pedoman
                   utama dalam membina para siswa di sekolah-sekolah kami ini.
                   Melalui media website berserta seluruh jejaring sosial
@@ -82,6 +84,7 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
       </div>
     </div>
 
+    <!-- Video Profil -->
     <div
       class="video-section section-padding"
       :style="{ backgroundImage: `url('/images/bg/tentang-vid.png')` }"
@@ -111,9 +114,13 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
       />
       <!-- Animation Shape End -->
     </div>
+
+    <!-- Vision - Mission -->
     <CallToActionOne />
+
     <div class="line"><hr /></div>
 
+    <!-- Culture -->
     <div class="cta-section section-padding-250">
       <div class="container text-center icon-up-down-animation">
         <!-- Section Title Start -->
@@ -122,7 +129,6 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
           <!-- <p class="sub-title">Our team of designers, developers and creatives are perfectionists who love what they do and love where they work</p> -->
         </div>
         <!-- Section Title End -->
-       
 
         <div
           class="
@@ -135,14 +141,9 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
               <div class="content">
                 <div class="box">
                   <div class="info">
-                   
                     <span
                       class="info-text"
-                      style="
-                        font-size: 22px;
-
-                        margin-bottom: 20px;
-                      "
+                      style="font-size: 22px; margin-bottom: 20px"
                     >
                       MERDEKA MEMILIH DAN TANGGUNG JAWAB
                     </span>
@@ -168,11 +169,7 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
                     <!-- <h4 class="title">Help Desk</h4> -->
                     <span
                       class="info-text"
-                      style="
-                        font-size: 22px;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                      "
+                      style="font-size: 22px; margin-bottom: 20px"
                     >
                       KERJASAMA - KOMUNIKATIF TERBUKA
                     </span>
@@ -196,14 +193,9 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
               <div class="content">
                 <div class="box">
                   <div class="info">
-                   
                     <span
                       class="info-text"
-                      style="
-                        font-size: 22px;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                      "
+                      style="font-size: 22px; margin-bottom: 20px"
                     >
                       PEMBELAJAR YANG TANGGUH
                     </span>
@@ -224,14 +216,9 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
               <div class="content">
                 <div class="box">
                   <div class="info">
-                   
                     <span
                       class="info-text"
-                      style="
-                        font-size: 22px;
-
-                        margin-bottom: 20px;
-                      "
+                      style="font-size: 22px; margin-bottom: 20px"
                     >
                       DISIPLIN DAN JUJUR
                     </span>
@@ -252,14 +239,9 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
               <div class="content">
                 <div class="box">
                   <div class="info">
-                   
                     <span
                       class="info-text"
-                      style="
-                        font-size: 22px;
-
-                        margin-bottom: 20px;
-                      "
+                      style="font-size: 22px; margin-bottom: 20px"
                     >
                       CERMAT
                     </span>
@@ -280,14 +262,9 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
               <div class="content">
                 <div class="box">
                   <div class="info">
-                    
                     <span
                       class="info-text"
-                      style="
-                        font-size: 22px;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                      "
+                      style="font-size: 22px; margin-bottom: 20px"
                     >
                       EMPATI
                     </span>
@@ -307,14 +284,9 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
               <div class="content">
                 <div class="box">
                   <div class="info">
-                   
                     <span
                       class="info-text"
-                      style="
-                        font-size: 22px;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                      "
+                      style="font-size: 22px; margin-bottom: 20px"
                     >
                     </span>
                   </div>
@@ -330,14 +302,9 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
               <div class="content">
                 <div class="box">
                   <div class="info">
-                    
                     <span
                       class="info-text"
-                      style="
-                        font-size: 22px;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                      "
+                      style="font-size: 22px; margin-bottom: 20px"
                     >
                       BUDAYA MALU
                     </span>
@@ -353,31 +320,31 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
           </div>
         </div>
         <!-- Icon Animation Start -->
-        <div
+        <!-- <div
           class="shape"
           v-for="(shape, index) in shapeData"
           :key="index"
           :class="shape.className"
         >
-          <!-- <span>
+          <span>
             <img :src="shape.imgSrc" alt="icon" />
-          </span> -->
-        </div>
+          </span>
+        </div> -->
         <!-- Icon Animation End -->
       </div>
     </div>
 
-    <section
-      class="timeline-area responsive-content area-padding theme-bg-gray"
-    >
+    <!-- Hsitory -->
+    <div class="timeline-area responsive-content area-padding theme-bg-gray">
       <div class="timeline-fluid">
         <div class="container">
           <div class="row">
             <div class="col-md-12 primary-padding-3">
               <div class="avivon-heading">
-                <h1 class="avivon__title mb-20" style="text-align:center">Sejarah Singkat</h1>
+                <h1 class="avivon__title mb-20" style="text-align: center">
+                  Sejarah Singkat
+                </h1>
               </div>
-             
             </div>
             <!-- end col-md-12 -->
           </div>
@@ -434,10 +401,7 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
                     <div class="time__item-bg time__bg-2"></div>
                     <div class="image-content">
                       <div class="image-box">
-                        <img
-                          src="/images/icon-animation/1960.jpg"
-                          alt="Icon"
-                        />
+                        <img src="/images/icon-animation/1960.jpg" alt="Icon" />
                       </div>
                     </div>
                   </div>
@@ -516,10 +480,7 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
                     <div class="time__item-bg time__bg-4"></div>
                     <div class="image-content">
                       <div class="image-box">
-                        <img
-                          src="/images/icon-animation/2013.jpg"
-                          alt="Icon"
-                        />
+                        <img src="/images/icon-animation/2013.jpg" alt="Icon" />
                       </div>
                     </div>
                   </div>
@@ -561,7 +522,7 @@ YANG MEMBENTUK PRIBADI BERINTEGRITAS"
         <!-- container -->
       </div>
       <!-- end timeline-fluid -->
-    </section>
+    </div>
   </div>
 </template>
 
@@ -646,3 +607,5 @@ export default {
   margin: auto;
 }
 </style>
+
+

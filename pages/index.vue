@@ -1,6 +1,8 @@
 <template>
   <div class="main-container">
     <OffCanvasMobileMenu />
+
+    <!-- Banner -->
     <div class="intro-slider">
       <swiper :options="swiperOptions">
         <swiper-slide
@@ -39,6 +41,7 @@
       </div>
     </div>
 
+    <!-- Tentang Kami -->
     <div class="section-padding-t90 section-padding-bottom-200">
       <div class="container">
         <!-- Section Title Start -->
@@ -108,6 +111,7 @@
       </div>
     </div>
 
+    <!-- Fun fact -->
     <div
       class="section-padding-t90 section-padding-bottom"
       :style="{ backgroundColor: '#1c62b1' }"
@@ -174,7 +178,7 @@
       </div>
     </div>
 
-    <!-- Achievements -->
+    <!-- Team Achievments -->
     <TeamOne />
 
     <!-- Events -->
@@ -253,8 +257,6 @@
       </div>
     </div>
 
-    <!-- <BrandLogoCarousel /> -->
-
     <!-- Testimoni -->
     <TestimonialSectionOne />
 
@@ -290,10 +292,7 @@
               </div>
               <!-- Section Title Two End -->
 
-              <n-link
-                to="/career"
-                class="btn btn-primary btn-hover-secondary"
-              >
+              <n-link to="/career" class="btn btn-primary btn-hover-secondary">
                 DAFTAR DISINI
               </n-link>
             </div>
@@ -305,8 +304,6 @@
 </template>
 
 <script>
-// import blogData from "~/data/blog.json";
-
 export default {
   data() {
     return {
@@ -374,4 +371,5 @@ export default {
   },
 };
 </script>
+
 

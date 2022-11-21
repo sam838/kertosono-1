@@ -29,7 +29,6 @@
     // align-items: flex-start;
     justify-items: center;
     justify-content: center;
-   
     padding: 45px 30px 50px;
     border-radius: 5px;
     background-color: $white;
@@ -45,17 +44,13 @@
         background-color: transparent;
         box-shadow: none;
         border-radius: 0;
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid #777;
         &:last-child{
             border-bottom: 0 none;
             padding-bottom: 0;
         }
         .icon{
-            svg{
-                & path{
-                    stroke: $white;
-                }
-            }
+            width: 55px;
             // Responsive
             @media #{$desktop-device}{
                 margin-right: 20px;
@@ -141,7 +136,6 @@
             font-size: 16px;
             display: block;
             line-height: 27px;
-            text-align: center;
             strong{
                 color: $heading-color;
             }
